@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-function App() {
+function App(){
   var App = require("./App")
   return (
     <div>
