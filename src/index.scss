@@ -65,7 +65,6 @@
   }
 
   .ratings-card {
-    display: none;
     background-color: var(--neutral-very-dark-blue);
     padding: 1rem;
     border-radius: 1rem;
@@ -153,7 +152,7 @@
 }
 
   .thank-you-card {
-    // display: none;
+    display: none;
     background-color: var(--neutral-very-dark-blue);
     padding: 1rem;
     border-radius: 1rem;
