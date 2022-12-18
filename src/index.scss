@@ -65,7 +65,6 @@
   }
 
   .ratings-card {
-    display: 'block';
     background-color: var(--neutral-very-dark-blue);
     padding: 1rem;
     border-radius: 1rem;
@@ -102,22 +101,10 @@
     padding-block: 2rem;
     padding-left: 0;
   }
-  /* make li a button on each with hover
-     make each button with an id and name for javascript */
+  
   li {
-  //   border-radius: 50%;
        list-style-type: none;
-  //   background-color: var(--neutral-dark-blue);
-  //   width: 3rem;
-  //   height: 3rem;
-  //   padding-top: 1rem;
-  //   cursor: pointer;
      }
-
-  // li:hover {
-  //   background-color: var(--primary-orange);
-  //   color: var(--neutral-white);
-  // }
 
   .button--rating {
     border-radius: 50%;
@@ -136,13 +123,14 @@
   }
 
   .submit-button {
-    text-decoration: none;
     text-transform: uppercase;
     font-weight: var(--fw-700);
-    letter-spacing: .2rem;
+    // letter-spacing: .2rem;
+    letter-spacing: .09rem;
     color: var(--neutral-white);
     background-color: var(--primary-orange);
     padding: .7rem 7rem;
+    border: none;
     border-radius: 10rem;
     cursor: pointer;
   }
