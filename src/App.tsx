@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
-import './ratings.js';
+import './ratings';
 
 function App(){
-  var App = require("./App")
+  // var App = require("./App")
+  console.log('hello');
   return (
     <div>
     

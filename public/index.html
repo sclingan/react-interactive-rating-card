@@ -20,7 +20,7 @@
 </head>
 <body>
   <main>
-    <section class="ratings-card">
+    <section class="ratings-card" id="ratings-card">
   <!-- Rating state start -->
   <div class="div--icon-star">
   <img src="./images/icon-star.svg" alt="orange star icon" aria-hidden="true">
@@ -44,22 +44,22 @@
   <li><button class="button--rating" id="button-rating-five" value="5">5</button></li>
 
   </ul>
-
+<!-- 
   <a class="submit-button" href="">
-  Submit</a>
-  <button onclick='thanks()'>click me</button>
+  Submit</a> -->
+  <button id='submit'>click me</button>
 
     </section>
 
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
-  <section class="thank-you-card">
+  <section class="thank-you-card" id="thank-you-card">
     <div class="div--selection-icon">
       <img src="./images/illustration-thank-you.svg" alt="" aria-hidden="true">
     </div>
     <div class="div--selected">
-      You selected <!-- Add rating here --> out of 5
+      You selected <!-- Add rating here --> <span id='rating--output'></span>out of 5
     </div>
 
   <h1>Thank you!</h1>

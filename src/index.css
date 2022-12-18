@@ -65,6 +65,7 @@ body {
 }
 
 .ratings-card {
+  display: "block";
   background-color: var(--neutral-very-dark-blue);
   padding: 1rem;
   border-radius: 1rem;
@@ -162,4 +163,8 @@ li {
   border-radius: 10rem;
   padding: 0.5rem 1rem; /* fix the length of this */
   margin-bottom: 1rem;
+}
+
+#rating--output {
+  padding-right: 0.2rem;
 }/*# sourceMappingURL=index.css.map */
