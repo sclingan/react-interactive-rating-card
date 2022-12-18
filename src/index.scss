@@ -63,7 +63,9 @@
     font-weight: var(--fw-400);
     font-size: 0.9375rem;
   }
-
+/* TODO:
+    Add animation to card change, make the cards flip 
+*/
   .ratings-card {
     background-color: var(--neutral-very-dark-blue);
     padding: 1rem;
@@ -101,7 +103,7 @@
     padding-block: 2rem;
     padding-left: 0;
   }
-  
+
   li {
        list-style-type: none;
      }
@@ -118,6 +120,11 @@
   }
 
   .button--rating:hover {
+    background-color: var(--neutral-light-grey);
+    color: var(--neutral-white);
+  }
+
+  .button--rating:focus {
     background-color: var(--primary-orange);
     color: var(--neutral-white);
   }
@@ -125,8 +132,7 @@
   .submit-button {
     text-transform: uppercase;
     font-weight: var(--fw-700);
-    // letter-spacing: .2rem;
-    letter-spacing: .09rem;
+    letter-spacing: .2rem;
     color: var(--neutral-white);
     background-color: var(--primary-orange);
     padding: .7rem 7rem;
@@ -148,6 +154,7 @@
     padding-bottom: 3rem;
     max-width: 21rem;/* check this */
     text-align: center;
+    transition: transform 1s ease-in;
   }
 
   .div--selection-icon {

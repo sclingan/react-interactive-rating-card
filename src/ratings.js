@@ -1,10 +1,14 @@
 "use strict";
 exports.__esModule = true;
+var showThankYou = document.getElementById('thank-you-card');
+showThankYou.addEventListener('mouseover', function () {
+    showThankYou.style.transform = 'rotateY(360deg)';
+});
 var runFunc = document.getElementById('submit');
 runFunc.addEventListener('click', function () {
-    var showRating = document.getElementById('thank-you-card');
-    if (showRating != null) {
-        showRating.style.display = 'block';
+    var showThankYou = document.getElementById('thank-you-card');
+    if (showThankYou != null) {
+        showThankYou.style.display = 'block';
         var hideRating = document.getElementById('ratings-card');
         hideRating.style.display = 'none';
     }
@@ -20,10 +24,4 @@ for (var i = 0; i < 5; i++) {
     _loop_1(i);
 }
 ;
-// export function thanks() {
-//     let showRating: HTMLElement | null = document.getElementById('thank-you-card');
-//     if(showRating != null) {
-//         showRating.style.display = 'block';
-//     }
-// };
 exports["default"] = {};
