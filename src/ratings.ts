@@ -1,10 +1,12 @@
+/* animate thank-you-card on display */
 let showThankYou: any = document.getElementById('thank-you-card');
 showThankYou.addEventListener('mouseover', function(){
     showThankYou.style.transform = 'rotateY(360deg)';
+
 });
 
 
-
+/* hide rating card and display thank-you-card */ 
 let runFunc: any = document.getElementById('submit');
 runFunc.addEventListener('click', function() {
     let showThankYou: HTMLElement | null = document.getElementById('thank-you-card');
@@ -16,7 +18,7 @@ runFunc.addEventListener('click', function() {
      }
 });
 
-
+/* get rating from button and display in thank-you-card */
 let buttonListen = document.getElementsByClassName('button--rating') as HTMLCollectionOf<HTMLElement>
 for(let i = 0; i < 5; i++){
 buttonListen[i].addEventListener('click', function() {
@@ -24,6 +26,8 @@ buttonListen[i].addEventListener('click', function() {
     ratingOutPut.innerHTML = i + 1;
 })
 };
+
+
 
 
 

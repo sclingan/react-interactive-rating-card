@@ -65,7 +65,7 @@ body {
   font-size: 0.9375rem;
 }
 
-.ratings-card {
+.ratings-card, .thank-you-card {
   background-color: var(--neutral-very-dark-blue);
   padding: 1rem;
   padding-inline: 2rem;
@@ -148,12 +148,6 @@ li {
 
 .thank-you-card {
   display: none;
-  background-color: var(--neutral-very-dark-blue);
-  padding: 1rem;
-  padding-inline: 2rem;
-  border-radius: 1rem;
-  padding-bottom: 3rem;
-  max-width: 25rem;
   text-align: center;
   transition: transform 1s;
 }

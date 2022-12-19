@@ -145,13 +145,8 @@
 }
 
   .thank-you-card {
+    @extend .ratings-card;
     display: none;
-    background-color: var(--neutral-very-dark-blue);
-    padding: 1rem;
-    padding-inline: 2rem;
-    border-radius: 1rem;
-    padding-bottom: 3rem;
-    max-width: 25rem;
     text-align: center;
     transition: transform 1s;
   }
