@@ -42,6 +42,7 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+/* CSS variables */
 :root {
   --primary-orange: hsl(25, 97%, 53%);
   --neutral-white: hsl(0, 0%, 100%);
@@ -64,15 +65,13 @@ body {
   font-size: 0.9375rem;
 }
 
-/* TODO:
-    Add animation to card change, make the cards flip 
-*/
 .ratings-card {
   background-color: var(--neutral-very-dark-blue);
   padding: 1rem;
+  padding-inline: 2rem;
   border-radius: 1rem;
-  padding-bottom: 3rem;
-  max-width: 21rem; /* check this */
+  padding-bottom: 2.5rem;
+  max-width: 25rem; /* check this */
 }
 
 .div--icon-star {
@@ -151,11 +150,12 @@ li {
   display: none;
   background-color: var(--neutral-very-dark-blue);
   padding: 1rem;
+  padding-inline: 2rem;
   border-radius: 1rem;
   padding-bottom: 3rem;
-  max-width: 21rem; /* check this */
+  max-width: 25rem;
   text-align: center;
-  transition: transform 1s ease-in;
+  transition: transform 1s;
 }
 
 .div--selection-icon {
@@ -167,10 +167,19 @@ li {
   border: none;
   color: var(--primary-orange);
   border-radius: 10rem;
-  padding: 0.5rem 1rem; /* fix the length of this */
+  padding: 0.5rem;
   margin-bottom: 1rem;
 }
 
 #rating--output {
   padding-right: 0.2rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
 }/*# sourceMappingURL=index.css.map */
