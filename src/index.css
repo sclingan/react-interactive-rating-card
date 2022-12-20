@@ -55,8 +55,13 @@ p, h1, h2, h3, h4, h5, h6 {
   --fw-700: 700;
 }
 
+/* Global styles */
+:focus {
+  outline: none;
+}
+
 body {
-  display: grid; /* centers card , but then its not responsive */
+  display: grid;
   place-content: center;
   background-color: hsl(0deg, 0%, 0%);
   color: var(--neutral-light-grey);
@@ -71,7 +76,6 @@ body {
   padding-inline: 2rem;
   border-radius: 1rem;
   padding-bottom: 2.5rem;
-  max-width: 25rem; /* check this */
 }
 
 .div--icon-star {
@@ -141,7 +145,8 @@ li {
   cursor: pointer;
 }
 
-.submit-button:hover {
+.submit-button:hover,
+.submit-button:focus {
   background-color: var(--neutral-white);
   color: var(--primary-orange);
 }
@@ -176,4 +181,10 @@ li {
 
 .attribution a {
   color: hsl(228deg, 45%, 44%);
+}
+
+@media (min-width: 400px) {
+  .ratings-card, .thank-you-card {
+    max-width: 25rem;
+  }
 }/*# sourceMappingURL=index.css.map */

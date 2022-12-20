@@ -53,9 +53,13 @@
     --fw-400: 400;
     --fw-700: 700;
   }
+  /* Global styles */
+  :focus {
+    outline: none;
+  }
 
   body {
-    display: grid;/* centers card , but then its not responsive */
+    display: grid;
     place-content: center;
     background-color: hsl(0, 0%, 0%);
     color: var(--neutral-light-grey);
@@ -63,13 +67,14 @@
     font-weight: var(--fw-400);
     font-size: 0.9375rem;
   }
+
   .ratings-card {
     background-color: var(--neutral-very-dark-blue);
     padding: 1rem;
     padding-inline: 2rem;
     border-radius: 1rem;
     padding-bottom: 2.5rem;
-    max-width: 25rem;/* check this */
+    // max-width: 25rem;
   }
 
   .div--icon-star {
@@ -139,7 +144,8 @@
     cursor: pointer;
   }
 
-  .submit-button:hover {
+  .submit-button:hover,
+  .submit-button:focus {
     background-color: var(--neutral-white);
     color: var(--primary-orange);
 }
@@ -176,3 +182,11 @@
   .attribution a { 
     color: hsl(228, 45%, 44%); 
   }
+
+  @media (min-width: 400px) {
+
+    .ratings-card {
+      max-width: 25rem;
+    }
+  }
+  
