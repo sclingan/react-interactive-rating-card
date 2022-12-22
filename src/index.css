@@ -60,6 +60,7 @@ p, h1, h2, h3, h4, h5, h6 {
   outline: none;
 }
 
+/* Center card using Grid */
 body {
   display: grid;
   place-content: center;
@@ -161,6 +162,7 @@ li {
   padding: 2rem 4rem;
 }
 
+/* Display typescript variable for rating */
 .div--selected {
   background-color: var(--neutral-dark-blue);
   border: none;
@@ -183,12 +185,14 @@ li {
   color: hsl(228deg, 45%, 44%);
 }
 
-@media (min-width: 400px) {
+@media (min-width: 25rem) {
+  /* keep card size at larger screens */
   .ratings-card, .thank-you-card {
     max-width: 25rem;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 18.75rem) {
+  /* Padding and margins for smallest screens */
   .ratings-card, .thank-you-card {
     padding-left: 1rem;
     padding-right: 0;
