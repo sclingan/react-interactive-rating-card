@@ -187,4 +187,22 @@ li {
   .ratings-card, .thank-you-card {
     max-width: 25rem;
   }
+}
+@media (max-width: 300px) {
+  .ratings-card, .thank-you-card {
+    padding-left: 1rem;
+    padding-right: 0;
+  }
+  ul {
+    gap: 0;
+    margin-right: 1rem;
+  }
+  p {
+    max-width: 25ch;
+    margin-right: 1rem;
+  }
+  .submit-button {
+    max-width: 90%;
+    padding: 0.7rem 6rem;
+  }
 }/*# sourceMappingURL=index.css.map */
