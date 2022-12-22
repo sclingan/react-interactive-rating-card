@@ -2,17 +2,14 @@
 let showThankYou: any = document.getElementById('thank-you-card');
 showThankYou.addEventListener('mouseover', function(){
     showThankYou.style.transform = 'rotateY(360deg)';
-
 });
-
 
 /* hide rating card and display thank-you-card */ 
 let runFunc: any = document.getElementById('submit');
 runFunc.addEventListener('click', function() {
     let showThankYou: HTMLElement | null = document.getElementById('thank-you-card');
      if(showThankYou != null) {
-       showThankYou.style.display = 'block';
-                
+       showThankYou.style.display = 'block';             
        let hideRating: any = document.getElementById('ratings-card');
        hideRating.style.display = 'none';
      }
