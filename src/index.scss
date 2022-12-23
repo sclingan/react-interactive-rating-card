@@ -71,9 +71,7 @@
   .ratings-card {
     background-color: var(--neutral-very-dark-blue);
     padding: 1rem;
-    padding-inline: 2rem;
     border-radius: 1rem;
-    padding-bottom: 2.5rem;
   }
 
   .div--icon-star {
@@ -88,27 +86,16 @@
   h1 {
     color: var(--neutral-white);
     font-weight: var(--fw-700);
-    padding-block: 1rem;
+    padding-block: .5rem;
   }
 
   p {
     color: var(--neutral-med-grey);
+    max-width: 32ch;
   }
 
-  ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 1rem;
-    align-items: center;
-    text-align: center;
-    padding-block: 2rem;
-    padding-left: 0;
+   form {
   }
-
-  li {
-       list-style-type: none;
-     }
 
   .button--rating {
     border-radius: 50%;
@@ -117,7 +104,8 @@
     color: var(--neutral-light-grey);
     text-align: center;
     padding: .7rem 1rem .5rem 1rem;
-    margin-right: .5rem;
+    margin-right: 1.2rem;
+    margin-block: 1.5rem;
     cursor: pointer;
   }
 
@@ -175,6 +163,7 @@
   }
 
   .attribution { 
+    padding-top: 2rem;
     font-size: 11px; 
     text-align: center; 
   }
@@ -182,36 +171,5 @@
   .attribution a { 
     color: hsl(228, 45%, 44%); 
   }
-
-  @media (min-width: 25rem) {
-    /* keep card size at larger screens */
-    .ratings-card {
-      max-width: 25rem;
-    }
-  }
-
-  @media (max-width: 18.75rem) {
-    /* Padding and margins for smallest screens */
-    .ratings-card {
-      padding-left: 1rem;
-      padding-right: 0;
-    }
-
-    ul {
-      gap: 0;
-      margin-right: 1rem;
-    }
-
-    p {
-      max-width: 25ch;
-      margin-right: 1rem;
-    }
-
-    .submit-button {
-      max-width: 90%;
-      padding: .7rem 6rem;
-    }
-
-
-  }
+ 
   
