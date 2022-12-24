@@ -75,6 +75,7 @@ body {
   background-color: var(--neutral-very-dark-blue);
   padding: 1rem;
   border-radius: 1rem;
+  max-width: 21rem; /* mobile */
 }
 
 .div--icon-star {
@@ -94,7 +95,6 @@ h1 {
 
 p {
   color: var(--neutral-med-grey);
-  max-width: 32ch;
 }
 
 .button--rating {
@@ -104,7 +104,7 @@ p {
   color: var(--neutral-light-grey);
   text-align: center;
   padding: 0.7rem 1rem 0.5rem 1rem;
-  margin-right: 1.2rem;
+  margin-right: 1rem;
   margin-block: 1.5rem;
   cursor: pointer;
 }
@@ -125,10 +125,11 @@ p {
   letter-spacing: 0.2rem;
   color: var(--neutral-white);
   background-color: var(--primary-orange);
-  padding: 0.7rem 7rem;
+  padding: 0.7rem 6.5rem; /* mobile */
   border: none;
   border-radius: 10rem;
   cursor: pointer;
+  margin-bottom: 1rem;
 }
 
 .submit-button:hover,

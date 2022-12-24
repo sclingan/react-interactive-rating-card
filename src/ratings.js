@@ -1,30 +1,32 @@
 "use strict";
+/* Prevent default from form */
 exports.__esModule = true;
-/* animate thank-you-card on display */
-var showThankYou = document.getElementById('thank-you-card');
-showThankYou.addEventListener('mouseover', function () {
-    showThankYou.style.transform = 'rotateY(360deg)';
-});
-/* hide rating card and display thank-you-card */
-var runFunc = document.getElementById('submit');
-runFunc.addEventListener('click', function () {
-    var showThankYou = document.getElementById('thank-you-card');
-    if (showThankYou != null) {
-        showThankYou.style.display = 'block';
-        var hideRating = document.getElementById('ratings-card');
-        hideRating.style.display = 'none';
+exports.preventFormDefault = void 0;
+function preventFormDefault() {
+    var form = document.getElementById('form-rating');
+    if (form != null) {
+        form.addEventListener('submit', (function (event) { return event.preventDefault(); }));
     }
-});
-/* get rating from button and display in thank-you-card */
-var buttonListen = document.getElementsByClassName('button--rating');
-var _loop_1 = function (i) {
-    buttonListen[i].addEventListener('click', function () {
-        var ratingOutPut = document.getElementById('rating--output');
-        ratingOutPut.innerHTML = i + 1;
-    });
-};
-for (var i = 0; i < 5; i++) {
-    _loop_1(i);
 }
-;
+exports.preventFormDefault = preventFormDefault;
+preventFormDefault();
+/* Listen for click on buttons, get innerHTML for rating */
+var ratingOutput = document.getElementById('rating--output');
+var buttonRating = document.getElementsByClassName('button--rating');
+for (var i = 0; i < 5; i++) {
+    buttonRating[i].addEventListener('click', function (e) {
+        ratingOutput.innerHTML = e.target.innerHTML;
+    });
+}
+/* On submit hide rating card , display thank you card, animate */
+var submitButton = document.getElementById('submit');
+submitButton.addEventListener('click', function () {
+    var ratingCard = document.getElementById('ratings-card');
+    var thankYou = document.getElementById('thank-you-card');
+    ratingCard.style.display = 'none';
+    thankYou.addEventListener('mouseover', function () {
+        thankYou.style.transform = 'rotateY(360deg)';
+    });
+    thankYou.style.display = 'block';
+});
 exports["default"] = {};
