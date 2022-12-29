@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-interactive-rating-card/static/css/main.c41ea319.css",
+    "main.css": "/react-interactive-rating-card/static/css/main.1e336866.css",
     "main.js": "/react-interactive-rating-card/static/js/main.2dcf5725.js",
     "index.html": "/react-interactive-rating-card/index.html",
-    "main.c41ea319.css.map": "/react-interactive-rating-card/static/css/main.c41ea319.css.map",
+    "main.1e336866.css.map": "/react-interactive-rating-card/static/css/main.1e336866.css.map",
     "main.2dcf5725.js.map": "/react-interactive-rating-card/static/js/main.2dcf5725.js.map"
   },
   "entrypoints": [
-    "static/css/main.c41ea319.css",
+    "static/css/main.1e336866.css",
     "static/js/main.2dcf5725.js"
   ]
 }
