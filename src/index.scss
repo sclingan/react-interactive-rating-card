@@ -53,6 +53,13 @@
     --fw-400: 400;
     --fw-700: 700;
   }
+
+  fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  
   /* Global styles */
   :focus {
     outline: none;
